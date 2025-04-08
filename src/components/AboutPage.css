@@ -108,7 +108,26 @@ body {
 .section {
   margin-bottom: 30px;
 }
+.right-section {
+  max-height: 90vh; /* or whatever fits well */
+  overflow-y: auto;
+  padding-right: 10px;
+  scroll-behavior: smooth; /* smooth scroll when triggered */
+}
 
+/* Optional: make scrollbar pretty */
+.right-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right-section::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.right-section::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .section h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;

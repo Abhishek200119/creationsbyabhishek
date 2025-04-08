@@ -63,6 +63,7 @@ function AboutPage() {
           <div className="section">
             <h2>Certifications and Achievements</h2>
             <ul>
+              <li>Foundations of User Experience (UX) Design,Google</li>
               <li>Salesforce Design Days 2023 Challenge, Bengaluru, 2023</li>
               <li>UI/UX Design Certificate, Accenture, 2023</li>
             </ul>

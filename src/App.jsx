@@ -11,18 +11,16 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <Router>
-      <Navbar /> {/* Navbar appears on all pages */}
+    <Router basename="/creationsbyabhishek"> {/* Important for GitHub Pages */}
+      <Navbar />
       <Routes>
-        <Route path="/" element={<LandingPage key="home" />} />
-        <Route path="/About" element={<AboutPage key="about" />} />
-        <Route path="/CaseStudy" element={<CaseStudy key="caseStudy" />} />
-        <Route path="/Contact" element={<ContactPage key="contact" />} />
-        
-        {/* New Case Study Pages */}
-        <Route path="/product-design" element={<ProductDesign key="productDesign" />} />
-        <Route path="/web-design" element={<WebDesign key="webDesign" />} />
-        <Route path="/mobile-app-design" element={<MobileAppDesign key="mobileAppDesign" />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/About" element={<AboutPage />} />
+        <Route path="/CaseStudy" element={<CaseStudy />} />
+        <Route path="/Contact" element={<ContactPage />} />
+        <Route path="/product-design" element={<ProductDesign />} />
+        <Route path="/web-design" element={<WebDesign />} />
+        <Route path="/mobile-app-design" element={<MobileAppDesign />} />
       </Routes>
     </Router>
   );
